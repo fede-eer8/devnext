@@ -3,7 +3,7 @@ import { container, title } from "assets/jss/nextjs-material-kit.js";
 const landingPageStyle = {
   container: {
     zIndex: "12",
-    color: "#FFFFFF",
+    color: "#FFFFFF",  //color del subtitulo header
     ...container
   },
   title: {
@@ -21,14 +21,14 @@ const landingPageStyle = {
     margin: "10px auto 0"
   },
   main: {
-    background: "#FFFFFF",
+    background: "#FFFFFF", //color de fondo de la tarjeta mayor
     position: "relative",
     zIndex: "3"
   },
   mainRaised: {
-    margin: "-60px 30px 0px",
+    margin: "-60px 30px 0px", //margen usado
     borderRadius: "6px",
-    boxShadow:
+    boxShadow:          // sombra de la caja web
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
   }
 };

@@ -34,7 +34,7 @@ export default function HomePage(props) {
 			<Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Diseño Web React"
+        brand="Web Ahora"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -47,12 +47,10 @@ export default function HomePage(props) {
 					<div className={classes.container}>
 						<GridContainer>
 							<GridItem xs={12} sm={12} md={6}>
-								<h1 className={classes.title}>Empieza publicando tu sitio web</h1>
+								<h1 className={classes.title}>Empezá publicando tu sitio web</h1>
 								<h4>
-									Every landing page needs a small description after the big bold
-									title, that{"'"}s why we added this text here. Add here all the
-									information that can make you or your product create the first
-									impression.
+									Tenemos lo necesario para llevar tu negocio al estado virtual.
+									Te asistimos en cada parte del proceso. Llamanos!																																																																																																																																																																																																																																																													{/*  */}
 								</h4>
 								<br />
 								<Button
