@@ -20,6 +20,7 @@ import styles from "assets/jss/nextjs-material-kit/pages/landingPage.js";
 import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
 import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
+import Cover from "pages-sections/LandingPage-Sections/Cover.js";
 
 const dashboardRoutes = [];
 
@@ -32,16 +33,16 @@ export default function HomePage(props) {
 	return (
 		<div>
 			<Header
-        color="transparent"
-        routes={dashboardRoutes}
-        brand="Web Ahora"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
-        {...rest}
+			color="transparent"
+			routes={dashboardRoutes}
+			brand="Web Ahora"
+			rightLinks={<HeaderLinks />}
+			fixed
+			changeColorOnScroll={{
+				height: 400,
+				color: "white"
+			}}
+			{...rest}
       />
 			<Parallax filter responsive image={require("assets/img/landing-bg.jpg")}>
 					<div className={classes.container}>
@@ -50,7 +51,7 @@ export default function HomePage(props) {
 								<h1 className={classes.title}>Empezá publicando tu sitio web</h1>
 								<h4>
 									Tenemos lo necesario para llevar tu negocio al estado virtual.
-									Te asistimos en cada parte del proceso. Llamanos!																																																																																																																																																																																																																																																													{/*  */}
+									Te asistimos en cada parte del proceso. Llamanos!																																																																																																																																																																																																																																																											{/*  */}
 								</h4>
 								<br />
 								<Button
@@ -73,6 +74,8 @@ export default function HomePage(props) {
 						<TeamSection />
 						<WorkSection />
 					</div>
+					<Cover />
+					<ProductSection />
 				</div>
 				<Footer />
 			</div>

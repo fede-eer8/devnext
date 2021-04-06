@@ -20,6 +20,7 @@ export default function ProductSection() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
+      <div className={classes.container}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Adelante con tus Proyetos</h2>
@@ -69,6 +70,8 @@ export default function ProductSection() {
           </GridItem>
         </GridContainer>
       </div>
+      </div>
+      
     </div>
   );
 }
