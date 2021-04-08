@@ -1,11 +1,12 @@
 import React from "react";
+import Head from 'next/head';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -32,6 +33,9 @@ export default function HomePage(props) {
 
 	return (
 		<div>
+      <Head>
+        <title>Crea tu sitio Web</title>
+      </Head>
 			<Header
 			color="transparent"
 			routes={dashboardRoutes}
@@ -77,7 +81,16 @@ export default function HomePage(props) {
 					<Cover />
 					<ProductSection />
 				</div>
+        <a
+        href="https://wa.me/+5492616711989"
+        className={classes.whatsapp_float}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className={classes.whatsappIcon + " fab fa-whatsapp"}></i>
+      </a>
 				<Footer />
+        
 			</div>
 	)
 }

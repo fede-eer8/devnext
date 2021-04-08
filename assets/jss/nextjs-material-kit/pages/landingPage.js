@@ -34,7 +34,34 @@ const landingPageStyle = {
       marginLeft: "10px",
       marginRight: "10px"
     }
-  }
+  },
+  whatsapp_float: {
+    position: "fixed",
+    width: "60px",
+    height: "60px",
+    bottom: "40px",
+    right: "40px",
+    background: "#25d366",
+    color: "#FFF",
+    borderRadius: "50px",
+    textAlign: "center",
+    fontSize: "30px",
+    boxShadow: "2px 2px 3px #999",
+    zIndex: "100",
+    "@media (max-width: 830px)": {
+      width: "40px",
+      height: "40px",
+      bottom: "20px",
+      right: "10px",
+      fontSize: "22px"
+    }
+  },
+  whatsappIcon: {
+    marginTop: "16px",
+    "@media (max-width: 830px)": {
+      marginTop: "10px",
+    }
+  },
 };
 
 export default landingPageStyle;
