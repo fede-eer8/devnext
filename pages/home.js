@@ -29,68 +29,68 @@ const useStyles = makeStyles(styles);
 
 export default function HomePage(props) {
 	const classes = useStyles();
-  const { ...rest } = props;
+	const { ...rest } = props;
 
 	return (
 		<div>
-      <Head>
-        <title>Crea tu sitio Web</title>
-      </Head>
+			<Head>
+				<title>Crea tu sitio Web</title>
+			</Head>
 			<Header
-			color="transparent"
-			routes={dashboardRoutes}
-			brand="Web Ahora"
-			rightLinks={<HeaderLinks />}
-			fixed
-			changeColorOnScroll={{
-				height: 400,
-				color: "white"
-			}}
-			{...rest}
-      />
+				color="transparent"
+				routes={dashboardRoutes}
+				brand="Web Ahora"
+				rightLinks={<HeaderLinks />}
+				fixed
+				changeColorOnScroll={{
+					height: 400,
+					color: "white"
+				}}
+				{...rest}
+			/>
 			<Parallax filter responsive image={require("assets/img/landing-bg.jpg")}>
-					<div className={classes.container}>
-						<GridContainer>
-							<GridItem xs={12} sm={12} md={6}>
-								<h1 className={classes.title}>Empezá publicando tu sitio web</h1>
-								<h4>
-									Tenemos lo necesario para llevar tu negocio al estado virtual.
+				<div className={classes.container}>
+					<GridContainer>
+						<GridItem xs={12} sm={12} md={6}>
+							<h1 className={classes.title}>Empezá publicando tu sitio web</h1>
+							<h4>
+								Tenemos lo necesario para llevar tu negocio al estado virtual.
 									Te asistimos en cada parte del proceso. Llamanos!																																																																																																																																																																																																																																																											{/*  */}
-								</h4>
-								<br />
-								<Button
-									color="danger"
-									size="lg"
-									href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<i className="fas fa-play" />
+							</h4>
+							<br />
+							<Button
+								color="danger"
+								size="lg"
+								href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<i className="fas fa-play" />
 									Watch video
 								</Button>
-							</GridItem>
-						</GridContainer>
-					</div>
-				</Parallax>
-				<div className={classNames(classes.main, classes.mainRaised)}>
-					<div className={classes.container}>
-						<ProductSection />
-						<TeamSection />
-						<WorkSection />
-					</div>
-					<Cover />
-					<ProductSection />
+						</GridItem>
+					</GridContainer>
 				</div>
-        <a
-        href="https://wa.me/+5492616711989"
-        className={classes.whatsapp_float}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className={classes.whatsappIcon + " fab fa-whatsapp"}></i>
-      </a>
-				<Footer />
-        
+			</Parallax>
+			<div className={classNames(classes.main, classes.mainRaised)}>
+				<div className={classes.container}>
+					<ProductSection />
+					<TeamSection />
+					<WorkSection />
+				</div>
+				<Cover />
+				<ProductSection />
 			</div>
+			<Button
+				href="https://wa.me/+5492616711989"
+				className={classes.whatsapp_float}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<i className={classes.whatsappIcon + " fab fa-whatsapp"}></i>
+			</Button>
+			<Footer />
+
+		</div>
 	)
 }

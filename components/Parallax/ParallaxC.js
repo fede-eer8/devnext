@@ -11,14 +11,8 @@ import styles from "assets/jss/nextjs-material-kit/components/parallaxStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function Parallax(props) {
-  let windowScrollTop;
-  // if (window.innerWidth >= 768) {
-  //   windowScrollTop = window.pageYOffset / 3;
-  // } else {
-  //   windowScrollTop = 0;
-  // }
-  const [transform, setTransform] = React.useState("translate3d(0,0px,0)");
+export default function ParallaxC(props) {
+const [transform, setTransform] = React.useState("translate3d(0,0px,0)");
   React.useEffect(() => {
     if (window.innerWidth >= 768) {
       window.addEventListener("scroll", resetTransform); //al hacer scroll llama a resetTransform
@@ -33,7 +27,7 @@ export default function Parallax(props) {
     var windowScrollTop = window.pageYOffset / 3;
     setTransform("translate3d(0," + windowScrollTop + "px,0)");
   };
-  const {
+	const {
     filter,
     className,
     children,
@@ -64,7 +58,7 @@ export default function Parallax(props) {
   );
 }
 
-Parallax.propTypes = {
+ParallaxC.propTypes = {
   className: PropTypes.string,
   filter: PropTypes.bool,
   children: PropTypes.node,

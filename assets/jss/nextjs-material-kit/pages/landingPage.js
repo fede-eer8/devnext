@@ -57,7 +57,8 @@ const landingPageStyle = {
     }
   },
   whatsappIcon: {
-    marginTop: "16px",
+    marginTop: "2px",
+    fontSize: "40px !important",
     "@media (max-width: 830px)": {
       marginTop: "10px",
     }
